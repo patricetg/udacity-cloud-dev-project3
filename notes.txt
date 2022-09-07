@@ -1,0 +1,12 @@
+
+https://adamtheautomator.com/docker-compose-environment-variables/
+
+https://stackoverflow.com/questions/30494050/how-do-i-pass-environment-variables-to-docker-containers
+
+https://towardsdatascience.com/a-complete-guide-to-using-environment-variables-and-files-with-docker-and-compose-4549c21dc6af
+
+
+ docker exec -it 4c634d71d354 sh
+
+
+ https://docs.docker.com/compose/environment-variables/
