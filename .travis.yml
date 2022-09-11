@@ -1,14 +1,14 @@
-# # blocklist
-# branches:
-#   except:
-#     - dev
-#     - experimental
+# blocklist
+branches:
+  except:
+    - dev
+    - experimental
 
-# # safelist
-# branches:
-#   only:
-#     - main
-#     - stage
+# safelist
+branches:
+  only:
+    - main
+    - stage
 
 language: node_js
 node_js:
@@ -41,8 +41,10 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push patricetg/reverseproxy
-  - docker push patricetg/udagram-api-user
-  - docker push patricetg/udagram-api-feed
-  - docker push patricetg/udagram-frontend
+  #- docker login -u "$DOCKER_USERNAME" -p "$DOCKER_ACCESS_TOKEN"
+  #- docker-compose -f docker-compose-build.yaml push
+  - docker push patricetg/reverseproxy:v4
+  - docker push patricetg/udagram-api-user:v4
+  - docker push patricetg/udagram-api-feed:v4
+  - docker push patricetg/udagram-frontend:v4
   #- docker push YOUR_DOCKER_HUB/simple-node
