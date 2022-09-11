@@ -14,3 +14,4 @@ https://towardsdatascience.com/a-complete-guide-to-using-environment-variables-a
 https://devconnected.com/how-to-switch-branch-on-git/
 https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/delete-local-git-branch-origin-force-merge-all
 
+https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches
