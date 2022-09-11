@@ -15,15 +15,15 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker image prune --all # Supprimez les images inutilisées et en suspens
+  - docker image prune --all --force # Supprimez les images inutilisées et en suspens, sans demande de confirmation
   #building images
   - docker-compose -f docker-compose-build.yaml build --parallel 
   #- docker build -t simple-node .
   #Tagging images
-  - docker tag udagram-reverseproxy patricetg/udagram-reverseproxy:v1
-  - docker tag udagram-api-user patricetg/udagram-api-user:v1
-  - docker tag udagram-api-feed patricetg/udagram-api-feed:v1
-  - docker tag udagram-frontend patricetg/udagram-frontend:v1
+  - docker tag udagram-reverseproxy patricetg/udagram-reverseproxy:v2
+  - docker tag udagram-api-user patricetg/udagram-api-user:v2
+  - docker tag udagram-api-feed patricetg/udagram-api-feed:v2
+  - docker tag udagram-frontend patricetg/udagram-frontend:v2
   #- docker tag simple-node YOUR_DOCKER_HUB/simple-node:latest
 
 
