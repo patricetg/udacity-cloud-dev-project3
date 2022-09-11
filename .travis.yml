@@ -1,0 +1,36 @@
+language: node_js
+node_js:
+  - 13
+
+services:
+  - docker
+
+# Prétester les installations
+install:
+  - echo "nothing needs to be installed"
+
+# Scripts à exécuter en guise de tests
+before_script:
+  - echo "no tests"
+
+script:
+  - docker --version # print the version for logging
+  - docker image prune --all # Supprimez les images inutilisées et en suspens
+  #building images
+  - docker-compose -f docker-compose-build.yaml build --parallel 
+  #- docker build -t simple-node .
+  #Tagging images
+  - docker tag udagram-reverseproxy patricetg/udagram-reverseproxy:v1
+  - docker tag udagram-api-user patricetg/udagram-api-user:v1
+  - docker tag udagram-api-feed patricetg/udagram-api-feed:v1
+  - docker tag udagram-frontend patricetg/udagram-frontend:v1
+  #- docker tag simple-node YOUR_DOCKER_HUB/simple-node:latest
+
+
+after_success:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push patricetg/reverseproxy
+  - docker push patricetg/udagram-api-user
+  - docker push patricetg/udagram-api-feed
+  - docker push patricetg/udagram-frontend
+  #- docker push YOUR_DOCKER_HUB/simple-node
