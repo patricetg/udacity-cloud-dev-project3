@@ -1,14 +1,14 @@
-# blocklist
-branches:
-  except:
-    - dev
-    - experimental
+# # blocklist
+# branches:
+#   except:
+#     - dev
+#     - experimental
 
-# safelist
-branches:
-  only:
-    - main
-    - stage
+# # safelist
+# branches:
+#   only:
+#     - main
+#     - stage
 
 language: node_js
 node_js:
