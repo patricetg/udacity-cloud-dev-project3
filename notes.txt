@@ -15,3 +15,29 @@ https://devconnected.com/how-to-switch-branch-on-git/
 https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/delete-local-git-branch-origin-force-merge-all
 
 https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches
+
+eksctl create cluster --name udagramMicroservicesV2 --region=us-east-2 --nodes-min=2 --nodes-max=3 --instance-types=m5.large --node-volume-size=10
+eksctl create cluster --name udagramMicroservicesV2 --region=us-east-2 --nodes-min=2 --nodes-max=3 --instance-types=t3.micro --node-volume-size=10
+
+eksctl delete cluster --name=udagramMicroservices --region=us-east-2
+
+eksctl utils describe-stacks --region=us-east-2 --cluster=udagramMicroservicesV2
+eksctl utils update-cluster-logging --enable-types={SPECIFY-YOUR-LOG-TYPES-HERE (e.g. all)} --region=us-east-2 --cluster=udagramMicroservicesV2
+
+https://github.com/clastix/kubectl-login
+
+https://eksctl.io/introduction/
+
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+
+kubectl get pods --watch
+kubectl get nodes
+kubectl get services
+kubectl describe pod reverseproxy-6d964ccd99-dkmjq
+kubectl logs reverseproxy-6d964ccd99-zvjdd
+
+kubectl replace --force -f reverseproxy.yaml
+
+kubectl expose deployment udagram-frontend --type=LoadBalancer --name=publicfrontend
+
