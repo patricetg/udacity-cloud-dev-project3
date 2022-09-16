@@ -51,6 +51,6 @@ kubectl replace --force -f reverseproxy.yaml
 
 kubectl expose deployment udagram-frontend --type=LoadBalancer --name=publicfrontend
 
-kubectl autoscale deployment udagram-api-feed --cpu-percent=70 --min=3 --max=5
-kubectl autoscale deployment udagram-api-user --cpu-percent=70 --min=3 --max=5
-kubectl autoscale deployment reverseproxy --cpu-percent=70 --min=3 --max=5
+kubectl autoscale deployment udagram-api-feed --cpu-percent=70 --min=2 --max=3
+kubectl autoscale deployment udagram-api-user --cpu-percent=70 --min=2 --max=3
+kubectl autoscale deployment reverseproxy --cpu-percent=70 --min=2 --max=3
