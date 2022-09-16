@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: non-confidential-env
+  name: env-configmap
 data:
   POSTGRES_HOST: udagramp3instance.cycq1fgw8jit.us-east-1.rds.amazonaws.com
   POSTGRES_DB: udagramp3

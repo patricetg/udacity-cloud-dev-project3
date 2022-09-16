@@ -1,0 +1,639 @@
+Name:             reverseproxy-7d4d98f88c-9gmmh
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-93-127.us-east-2.compute.internal/192.168.93.127
+Start Time:       Fri, 16 Sep 2022 09:58:49 +0000
+Labels:           app=reverseproxy
+                  pod-template-hash=7d4d98f88c
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Running
+IP:               192.168.84.107
+IPs:
+  IP:           192.168.84.107
+Controlled By:  ReplicaSet/reverseproxy-7d4d98f88c
+Containers:
+  reverseproxy:
+    Container ID:   docker://6f8fa65e8c1f7bbc71e0b6511d279c4a73c4c24f0bf5abf568561e45df63dfcb
+    Image:          patricetg/reverseproxy:v5
+    Image ID:       docker-pullable://patricetg/reverseproxy@sha256:19920bb0dc589d2bf13d919dd2fcc7987c2ecbd72889e79eae86134b536c5d0c
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       CrashLoopBackOff
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Fri, 16 Sep 2022 11:05:45 +0000
+      Finished:     Fri, 16 Sep 2022 11:05:45 +0000
+    Ready:          False
+    Restart Count:  18
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:     2Gi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-747xd (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-747xd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason   Age                   From     Message
+  ----     ------   ----                  ----     -------
+  Warning  BackOff  2m2s (x300 over 67m)  kubelet  Back-off restarting failed container
+
+
+Name:             reverseproxy-7d4d98f88c-g6hhb
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-8-165.us-east-2.compute.internal/192.168.8.165
+Start Time:       Fri, 16 Sep 2022 10:00:15 +0000
+Labels:           app=reverseproxy
+                  pod-template-hash=7d4d98f88c
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Running
+IP:               192.168.30.193
+IPs:
+  IP:           192.168.30.193
+Controlled By:  ReplicaSet/reverseproxy-7d4d98f88c
+Containers:
+  reverseproxy:
+    Container ID:   docker://dc63cfec3e234a27209ccbab2593c14bbf821acfc1ca8b4ba927c89f4ad7dca5
+    Image:          patricetg/reverseproxy:v5
+    Image ID:       docker-pullable://patricetg/reverseproxy@sha256:19920bb0dc589d2bf13d919dd2fcc7987c2ecbd72889e79eae86134b536c5d0c
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       CrashLoopBackOff
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Fri, 16 Sep 2022 11:02:04 +0000
+      Finished:     Fri, 16 Sep 2022 11:02:04 +0000
+    Ready:          False
+    Restart Count:  17
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:     2Gi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-tpbrz (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-tpbrz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason   Age                  From     Message
+  ----     ------   ----                 ----     -------
+  Warning  BackOff  38s (x297 over 65m)  kubelet  Back-off restarting failed container
+
+
+Name:             reverseproxy-7d4d98f88c-nfxl6
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-93-127.us-east-2.compute.internal/192.168.93.127
+Start Time:       Fri, 16 Sep 2022 10:41:18 +0000
+Labels:           app=reverseproxy
+                  pod-template-hash=7d4d98f88c
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Running
+IP:               192.168.76.20
+IPs:
+  IP:           192.168.76.20
+Controlled By:  ReplicaSet/reverseproxy-7d4d98f88c
+Containers:
+  reverseproxy:
+    Container ID:   docker://1795d9cd387020305b3a53900ee3f173210b55617113de9afd94a75cf09f7e0f
+    Image:          patricetg/reverseproxy:v5
+    Image ID:       docker-pullable://patricetg/reverseproxy@sha256:19920bb0dc589d2bf13d919dd2fcc7987c2ecbd72889e79eae86134b536c5d0c
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       CrashLoopBackOff
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Fri, 16 Sep 2022 11:02:33 +0000
+      Finished:     Fri, 16 Sep 2022 11:02:33 +0000
+    Ready:          False
+    Restart Count:  9
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:     2Gi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7pdwz (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-7pdwz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age                   From               Message
+  ----     ------            ----                  ----               -------
+  Warning  FailedScheduling  28m (x562 over 10h)   default-scheduler  0/2 nodes are available: 2 Insufficient memory.
+  Normal   Pulled            23m (x5 over 24m)     kubelet            Container image "patricetg/reverseproxy:v5" already present on machine
+  Normal   Created           23m (x5 over 24m)     kubelet            Created container reverseproxy
+  Normal   Started           23m (x5 over 24m)     kubelet            Started container reverseproxy
+  Warning  BackOff           4m34s (x96 over 24m)  kubelet            Back-off restarting failed container
+
+
+Name:             udagram-api-feed-5c6b85cb9c-gdbzq
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-8-165.us-east-2.compute.internal/192.168.8.165
+Start Time:       Fri, 16 Sep 2022 10:41:19 +0000
+Labels:           app=udagram-api-feed
+                  pod-template-hash=5c6b85cb9c
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Running
+IP:               192.168.2.8
+IPs:
+  IP:           192.168.2.8
+Controlled By:  ReplicaSet/udagram-api-feed-5c6b85cb9c
+Containers:
+  udagram-api-feed:
+    Container ID:   docker://c2ab535342964d0cda45feafc4361c78d31c9ec917de2b4781626210caf3caf9
+    Image:          patricetg/udagram-api-feed:v5
+    Image ID:       docker-pullable://patricetg/udagram-api-feed@sha256:453d964000c19f6dfe740c3e9e75b1d5652ef1742fae5089f590ab3b989733ab
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 16 Sep 2022 10:41:20 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:  2Gi
+    Environment:
+      POSTGRES_USERNAME:  <set to the key 'POSTGRES_USERNAME' in secret 'env-secret'>     Optional: false
+      POSTGRES_PASSWORD:  <set to the key 'POSTGRES_PASSWORD' in secret 'env-secret'>     Optional: false
+      POSTGRES_HOST:      <set to the key 'POSTGRES_HOST' of config map 'env-configmap'>  Optional: false
+      POSTGRES_DB:        <set to the key 'POSTGRES_DB' of config map 'env-configmap'>    Optional: false
+      AWS_BUCKET:         <set to the key 'AWS_BUCKET' of config map 'env-configmap'>     Optional: false
+      AWS_REGION:         <set to the key 'AWS_REGION' of config map 'env-configmap'>     Optional: false
+      AWS_PROFILE:        <set to the key 'AWS_PROFILE' of config map 'env-configmap'>    Optional: false
+      JWT_SECRET:         <set to the key 'JWT_SECRET' of config map 'env-configmap'>     Optional: false
+      URL:                <set to the key 'URL' of config map 'env-configmap'>            Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qq5cd (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-qq5cd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  24m   default-scheduler  Successfully assigned default/udagram-api-feed-5c6b85cb9c-gdbzq to ip-192-168-8-165.us-east-2.compute.internal
+  Normal  Pulled     24m   kubelet            Container image "patricetg/udagram-api-feed:v5" already present on machine
+  Normal  Created    24m   kubelet            Created container udagram-api-feed
+  Normal  Started    24m   kubelet            Started container udagram-api-feed
+
+
+Name:             udagram-api-feed-5c6b85cb9c-jfxl6
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-8-165.us-east-2.compute.internal/192.168.8.165
+Start Time:       Fri, 16 Sep 2022 10:41:19 +0000
+Labels:           app=udagram-api-feed
+                  pod-template-hash=5c6b85cb9c
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Running
+IP:               192.168.4.48
+IPs:
+  IP:           192.168.4.48
+Controlled By:  ReplicaSet/udagram-api-feed-5c6b85cb9c
+Containers:
+  udagram-api-feed:
+    Container ID:   docker://9e344a52a43177984d4103ce7bc766a1719fc037c0ca8f42f70a1aa18d1a3410
+    Image:          patricetg/udagram-api-feed:v5
+    Image ID:       docker-pullable://patricetg/udagram-api-feed@sha256:453d964000c19f6dfe740c3e9e75b1d5652ef1742fae5089f590ab3b989733ab
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 16 Sep 2022 10:41:20 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:  2Gi
+    Environment:
+      POSTGRES_USERNAME:  <set to the key 'POSTGRES_USERNAME' in secret 'env-secret'>     Optional: false
+      POSTGRES_PASSWORD:  <set to the key 'POSTGRES_PASSWORD' in secret 'env-secret'>     Optional: false
+      POSTGRES_HOST:      <set to the key 'POSTGRES_HOST' of config map 'env-configmap'>  Optional: false
+      POSTGRES_DB:        <set to the key 'POSTGRES_DB' of config map 'env-configmap'>    Optional: false
+      AWS_BUCKET:         <set to the key 'AWS_BUCKET' of config map 'env-configmap'>     Optional: false
+      AWS_REGION:         <set to the key 'AWS_REGION' of config map 'env-configmap'>     Optional: false
+      AWS_PROFILE:        <set to the key 'AWS_PROFILE' of config map 'env-configmap'>    Optional: false
+      JWT_SECRET:         <set to the key 'JWT_SECRET' of config map 'env-configmap'>     Optional: false
+      URL:                <set to the key 'URL' of config map 'env-configmap'>            Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-bzn42 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-bzn42:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  24m   default-scheduler  Successfully assigned default/udagram-api-feed-5c6b85cb9c-jfxl6 to ip-192-168-8-165.us-east-2.compute.internal
+  Normal  Pulled     24m   kubelet            Container image "patricetg/udagram-api-feed:v5" already present on machine
+  Normal  Created    24m   kubelet            Created container udagram-api-feed
+  Normal  Started    24m   kubelet            Started container udagram-api-feed
+
+
+Name:             udagram-api-feed-5c6b85cb9c-v2ftm
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-93-127.us-east-2.compute.internal/192.168.93.127
+Start Time:       Fri, 16 Sep 2022 10:41:32 +0000
+Labels:           app=udagram-api-feed
+                  pod-template-hash=5c6b85cb9c
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Running
+IP:               192.168.65.154
+IPs:
+  IP:           192.168.65.154
+Controlled By:  ReplicaSet/udagram-api-feed-5c6b85cb9c
+Containers:
+  udagram-api-feed:
+    Container ID:   docker://d63b20a227a2c4760bda57bb9580a2213e3c2341e5badfd2ad387dfd677d3727
+    Image:          patricetg/udagram-api-feed:v5
+    Image ID:       docker-pullable://patricetg/udagram-api-feed@sha256:453d964000c19f6dfe740c3e9e75b1d5652ef1742fae5089f590ab3b989733ab
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 16 Sep 2022 10:41:33 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:  2Gi
+    Environment:
+      POSTGRES_USERNAME:  <set to the key 'POSTGRES_USERNAME' in secret 'env-secret'>     Optional: false
+      POSTGRES_PASSWORD:  <set to the key 'POSTGRES_PASSWORD' in secret 'env-secret'>     Optional: false
+      POSTGRES_HOST:      <set to the key 'POSTGRES_HOST' of config map 'env-configmap'>  Optional: false
+      POSTGRES_DB:        <set to the key 'POSTGRES_DB' of config map 'env-configmap'>    Optional: false
+      AWS_BUCKET:         <set to the key 'AWS_BUCKET' of config map 'env-configmap'>     Optional: false
+      AWS_REGION:         <set to the key 'AWS_REGION' of config map 'env-configmap'>     Optional: false
+      AWS_PROFILE:        <set to the key 'AWS_PROFILE' of config map 'env-configmap'>    Optional: false
+      JWT_SECRET:         <set to the key 'JWT_SECRET' of config map 'env-configmap'>     Optional: false
+      URL:                <set to the key 'URL' of config map 'env-configmap'>            Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-69j8t (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-69j8t:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  24m   default-scheduler  0/2 nodes are available: 2 Insufficient memory.
+  Normal   Scheduled         24m   default-scheduler  Successfully assigned default/udagram-api-feed-5c6b85cb9c-v2ftm to ip-192-168-93-127.us-east-2.compute.internal
+  Normal   Pulled            24m   kubelet            Container image "patricetg/udagram-api-feed:v5" already present on machine
+  Normal   Created           24m   kubelet            Created container udagram-api-feed
+  Normal   Started           24m   kubelet            Started container udagram-api-feed
+
+
+Name:             udagram-api-user-69c7997544-65jw8
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             <none>
+Labels:           app=udagram-api-user
+                  pod-template-hash=69c7997544
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Pending
+IP:               
+IPs:              <none>
+Controlled By:    ReplicaSet/udagram-api-user-69c7997544
+Containers:
+  udagram-api-user:
+    Image:      patricetg/udagram-api-user:v5
+    Port:       80/TCP
+    Host Port:  0/TCP
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:  2Gi
+    Environment:
+      POSTGRES_USERNAME:  <set to the key 'POSTGRES_USERNAME' in secret 'env-secret'>     Optional: false
+      POSTGRES_PASSWORD:  <set to the key 'POSTGRES_PASSWORD' in secret 'env-secret'>     Optional: false
+      POSTGRES_HOST:      <set to the key 'POSTGRES_HOST' of config map 'env-configmap'>  Optional: false
+      POSTGRES_DB:        <set to the key 'POSTGRES_DB' of config map 'env-configmap'>    Optional: false
+      AWS_BUCKET:         <set to the key 'AWS_BUCKET' of config map 'env-configmap'>     Optional: false
+      AWS_REGION:         <set to the key 'AWS_REGION' of config map 'env-configmap'>     Optional: false
+      AWS_PROFILE:        <set to the key 'AWS_PROFILE' of config map 'env-configmap'>    Optional: false
+      JWT_SECRET:         <set to the key 'JWT_SECRET' of config map 'env-configmap'>     Optional: false
+      URL:                <set to the key 'URL' of config map 'env-configmap'>            Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-g5hdj (ro)
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:
+  kube-api-access-g5hdj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age                From               Message
+  ----     ------            ----               ----               -------
+  Warning  FailedScheduling  2s (x24 over 24m)  default-scheduler  0/2 nodes are available: 2 Insufficient memory.
+
+
+Name:             udagram-api-user-69c7997544-bbjnp
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             <none>
+Labels:           app=udagram-api-user
+                  pod-template-hash=69c7997544
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Pending
+IP:               
+IPs:              <none>
+Controlled By:    ReplicaSet/udagram-api-user-69c7997544
+Containers:
+  udagram-api-user:
+    Image:      patricetg/udagram-api-user:v5
+    Port:       80/TCP
+    Host Port:  0/TCP
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:  2Gi
+    Environment:
+      POSTGRES_USERNAME:  <set to the key 'POSTGRES_USERNAME' in secret 'env-secret'>     Optional: false
+      POSTGRES_PASSWORD:  <set to the key 'POSTGRES_PASSWORD' in secret 'env-secret'>     Optional: false
+      POSTGRES_HOST:      <set to the key 'POSTGRES_HOST' of config map 'env-configmap'>  Optional: false
+      POSTGRES_DB:        <set to the key 'POSTGRES_DB' of config map 'env-configmap'>    Optional: false
+      AWS_BUCKET:         <set to the key 'AWS_BUCKET' of config map 'env-configmap'>     Optional: false
+      AWS_REGION:         <set to the key 'AWS_REGION' of config map 'env-configmap'>     Optional: false
+      AWS_PROFILE:        <set to the key 'AWS_PROFILE' of config map 'env-configmap'>    Optional: false
+      JWT_SECRET:         <set to the key 'JWT_SECRET' of config map 'env-configmap'>     Optional: false
+      URL:                <set to the key 'URL' of config map 'env-configmap'>            Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-rfccn (ro)
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:
+  kube-api-access-rfccn:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age                From               Message
+  ----     ------            ----               ----               -------
+  Warning  FailedScheduling  2s (x24 over 24m)  default-scheduler  0/2 nodes are available: 2 Insufficient memory.
+
+
+Name:             udagram-api-user-69c7997544-m4w98
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             <none>
+Labels:           app=udagram-api-user
+                  pod-template-hash=69c7997544
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Pending
+IP:               
+IPs:              <none>
+Controlled By:    ReplicaSet/udagram-api-user-69c7997544
+Containers:
+  udagram-api-user:
+    Image:      patricetg/udagram-api-user:v5
+    Port:       80/TCP
+    Host Port:  0/TCP
+    Limits:
+      memory:  6124Mi
+    Requests:
+      memory:  2Gi
+    Environment:
+      POSTGRES_USERNAME:  <set to the key 'POSTGRES_USERNAME' in secret 'env-secret'>     Optional: false
+      POSTGRES_PASSWORD:  <set to the key 'POSTGRES_PASSWORD' in secret 'env-secret'>     Optional: false
+      POSTGRES_HOST:      <set to the key 'POSTGRES_HOST' of config map 'env-configmap'>  Optional: false
+      POSTGRES_DB:        <set to the key 'POSTGRES_DB' of config map 'env-configmap'>    Optional: false
+      AWS_BUCKET:         <set to the key 'AWS_BUCKET' of config map 'env-configmap'>     Optional: false
+      AWS_REGION:         <set to the key 'AWS_REGION' of config map 'env-configmap'>     Optional: false
+      AWS_PROFILE:        <set to the key 'AWS_PROFILE' of config map 'env-configmap'>    Optional: false
+      JWT_SECRET:         <set to the key 'JWT_SECRET' of config map 'env-configmap'>     Optional: false
+      URL:                <set to the key 'URL' of config map 'env-configmap'>            Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-965v9 (ro)
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:
+  kube-api-access-965v9:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age                 From               Message
+  ----     ------            ----                ----               -------
+  Warning  FailedScheduling  33s (x24 over 24m)  default-scheduler  0/2 nodes are available: 2 Insufficient memory.
+
+
+Name:             udagram-frontend-54fddb485b-h8w9b
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-93-127.us-east-2.compute.internal/192.168.93.127
+Start Time:       Fri, 16 Sep 2022 00:02:47 +0000
+Labels:           app=udagram-frontend
+                  pod-template-hash=54fddb485b
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Running
+IP:               192.168.92.23
+IPs:
+  IP:           192.168.92.23
+Controlled By:  ReplicaSet/udagram-frontend-54fddb485b
+Containers:
+  udagram-frontend:
+    Container ID:   docker://35c29ed3c1ebd778ef07185911d8a5d797bdb6f3caccf927e0d2d3431894402f
+    Image:          patricetg/udagram-frontend:v5
+    Image ID:       docker-pullable://patricetg/udagram-frontend@sha256:750b9590442039c2c020dec8d5b26660c1ee0185ec9f81ef8b44b6a1d688e1cd
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 16 Sep 2022 00:02:50 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-s6kkc (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-s6kkc:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>
+
+
+Name:             udagram-frontend-54fddb485b-hgd28
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             ip-192-168-8-165.us-east-2.compute.internal/192.168.8.165
+Start Time:       Fri, 16 Sep 2022 00:02:47 +0000
+Labels:           app=udagram-frontend
+                  pod-template-hash=54fddb485b
+Annotations:      kubernetes.io/psp: eks.privileged
+Status:           Running
+IP:               192.168.6.115
+IPs:
+  IP:           192.168.6.115
+Controlled By:  ReplicaSet/udagram-frontend-54fddb485b
+Containers:
+  udagram-frontend:
+    Container ID:   docker://5b90cfb0202e4e1e60b3909e6b76682bb12cef536814f6ac396257b74a32f805
+    Image:          patricetg/udagram-frontend:v5
+    Image ID:       docker-pullable://patricetg/udagram-frontend@sha256:750b9590442039c2c020dec8d5b26660c1ee0185ec9f81ef8b44b6a1d688e1cd
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 16 Sep 2022 00:02:51 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wfzrt (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-wfzrt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>
