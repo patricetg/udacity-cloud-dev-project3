@@ -29,6 +29,13 @@ https://github.com/clastix/kubectl-login
 https://eksctl.io/introduction/
 
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/
+
+https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/
+https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables
+https://cloud.google.com/migrate/containers/docs/troubleshooting/executing-shell-commands
+https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#verify-the-secret
+https://www.blinkops.com/blog/troubleshooting-kubernetes-pods-stuck-in-pending-state
 
 
 kubectl get pods --watch
@@ -37,7 +44,13 @@ kubectl get services
 kubectl describe pod reverseproxy-6d964ccd99-dkmjq
 kubectl logs reverseproxy-6d964ccd99-zvjdd
 
+kubectl exec -it udagram-frontend-54fddb485b-hgd28 sh
+
+#redeploying over k8s
 kubectl replace --force -f reverseproxy.yaml
 
 kubectl expose deployment udagram-frontend --type=LoadBalancer --name=publicfrontend
 
+kubectl autoscale deployment udagram-api-feed --cpu-percent=70 --min=3 --max=5
+kubectl autoscale deployment udagram-api-user --cpu-percent=70 --min=3 --max=5
+kubectl autoscale deployment reverseproxy --cpu-percent=70 --min=3 --max=5
